@@ -132,7 +132,7 @@ Homebutton.BackgroundColor3 = Color3.fromRGB(86, 26, 139)
 Homebutton.Position = UDim2.new(0.417711556, 0, 0.909056485, 0)
 Homebutton.Size = UDim2.new(0, 107, 0, 30)
 Homebutton.Font = Enum.Font.SourceSans
-Homebutton.Text = "Home"
+Homebutton.Text = "Close"
 Homebutton.TextColor3 = Color3.fromRGB(0, 0, 0)
 Homebutton.TextSize = 14.000
 Homebutton.MouseButton1Down:connect(function()
