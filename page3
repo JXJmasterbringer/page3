@@ -1,3 +1,4 @@
+page2.visible = false
 
 local ScreenGui = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
