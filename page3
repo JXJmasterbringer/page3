@@ -45,8 +45,9 @@ local VipPackCloth = Instance.new("TextButton")
 local Respawn = Instance.new("TextButton")
 local Homebutton = Instance.new("TextButton")
 
-ScreenGui.Parent = game.CoreGui
 
+ScreenGui.Parent = game.CoreGui
+Main.Dragabble = true
 
 
 Page3.Name = "Page3"
