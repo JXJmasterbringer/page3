@@ -1,0 +1,139 @@
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local Chakra = Instance.new("TextButton")
+local Scythe = Instance.new("TextButton")
+local Scythe2 = Instance.new("TextButton")
+local Scythe3 = Instance.new("TextButton")
+local Scythe4 = Instance.new("TextButton")
+local Close = Instance.new("TextButton")
+local NextPage = Instance.new("TextButton")
+local OpenMain = Instance.new("TextButton")
+local Page2 = Instance.new("Frame")
+local UnicornSword = Instance.new("TextButton")
+local RainbowCloth = Instance.new("TextButton")
+local RainbowShuriken = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local PizzaSword = Instance.new("TextButton")
+local PizzaCloth = Instance.new("TextButton")
+local PizzaKunai = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local FunnyPass = Instance.new("TextLabel")
+local BoomerangDagger = Instance.new("TextButton")
+local DarkageKunai = Instance.new("TextButton")
+local RainbowCloth_2 = Instance.new("TextButton")
+local GhostDagger = Instance.new("TextButton")
+local GrabBag = Instance.new("TextButton")
+local OctopusCannon = Instance.new("TextButton")
+local StarfishShuriken = Instance.new("TextButton")
+local ThrowingDonuts = Instance.new("TextButton")
+local WarRock = Instance.new("TextButton")
+local FlowerStar1 = Instance.new("TextButton")
+local FirstPage = Instance.new("TextButton")
+local FlowerStar3 = Instance.new("TextButton")
+local Page3button = Instance.new("TextButton")
+local Login = Instance.new("Frame")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local PassWord = Instance.new("TextBox")
+local LoginButton = Instance.new("TextButton")
+local Page3 = Instance.new("Frame")
+local ImageLabel_3 = Instance.new("ImageLabel")
+local FastSword = Instance.new("TextButton")
+local NegativeNin = Instance.new("TextButton")
+local VipPackCloth = Instance.new("TextButton")
+local Respawn = Instance.new("TextButton")
+local Homebutton = Instance.new("TextButton")
+
+ScreenGui.Parent = game.CoreGui
+
+
+
+Page3.Name = "Page3"
+Page3.Parent = ScreenGui
+Page3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Page3.Position = UDim2.new(0.218627453, 0, 0.278532624, 0)
+Page3.Size = UDim2.new(0, 484, 0, 339)
+
+ImageLabel_3.Parent = Page3
+ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_3.Position = UDim2.new(-0.00185409188, 0, -0.00259613991, 0)
+ImageLabel_3.Size = UDim2.new(0, 487, 0, 347)
+ImageLabel_3.Image = "http://www.roblox.com/asset/?id=10065715293"
+
+FastSword.Name = "FastSword"
+FastSword.Parent = ImageLabel_3
+FastSword.BackgroundColor3 = Color3.fromRGB(86, 26, 139)
+FastSword.Position = UDim2.new(0.777054489, 0, 0.91193831, 0)
+FastSword.Size = UDim2.new(0, 107, 0, 30)
+FastSword.Font = Enum.Font.SourceSans
+FastSword.Text = "Fast Sword hit"
+FastSword.TextColor3 = Color3.fromRGB(0, 0, 0)
+FastSword.TextSize = 14.000
+FastSword.MouseButton1Down:connect(function()
+	while true do
+
+		game:GetService("Players").LocalPlayer.Character.Sword.HitEvent:FireServer()
+
+		wait(0.1)end
+end)
+
+
+
+NegativeNin.Name = "NegativeNin"
+NegativeNin.Parent = ImageLabel_3
+NegativeNin.BackgroundColor3 = Color3.fromRGB(86, 26, 139)
+NegativeNin.Position = UDim2.new(0.000968323555, 0, 0.805654407, 0)
+NegativeNin.Size = UDim2.new(0, 107, 0, 36)
+NegativeNin.Font = Enum.Font.SourceSans
+NegativeNin.Text = "Negative Ninjutsu"
+NegativeNin.TextColor3 = Color3.fromRGB(0, 0, 0)
+NegativeNin.TextSize = 14.000
+NegativeNin.MouseButton1Down:connect(function()
+	local rs = game:GetService("ReplicatedStorage")
+	while wait(0.72) do
+		rs.RemoteEvent.AddPowerEvent:FireServer("FromTraining", -2000000000000000000000000000000000000000000000000)
+		wait(0.72)
+		rs.RemoteEvent.AddPowerEvent:FireServer("FromTraining", -19916241294912496129491248999999.99) 
+	end 
+end)
+
+
+VipPackCloth.Name = "VipPackCloth"
+VipPackCloth.Parent = ImageLabel_3
+VipPackCloth.BackgroundColor3 = Color3.fromRGB(86, 26, 139)
+VipPackCloth.Position = UDim2.new(0.777054429, 0, 0.805743575, 0)
+VipPackCloth.Size = UDim2.new(0, 107, 0, 36)
+VipPackCloth.Font = Enum.Font.SourceSans
+VipPackCloth.Text = "VipPackCloth"
+VipPackCloth.TextColor3 = Color3.fromRGB(0, 0, 0)
+VipPackCloth.TextSize = 14.000
+VipPackCloth.MouseButton1Down:connect(function()
+	game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("VipPass", "VipPackCloth")
+end)
+
+Respawn.Name = "Respawn"
+Respawn.Parent = ImageLabel_3
+Respawn.BackgroundColor3 = Color3.fromRGB(86, 26, 139)
+Respawn.Position = UDim2.new(-0.00117959525, 0, 0.91193831, 0)
+Respawn.Size = UDim2.new(0, 108, 0, 30)
+Respawn.Font = Enum.Font.SourceSans
+Respawn.Text = "Respawn"
+Respawn.TextColor3 = Color3.fromRGB(0, 0, 0)
+Respawn.TextSize = 14.000
+Respawn.MouseButton1Down:connect(function()
+	game:GetService("ReplicatedStorage").RemoteEvent.SpawnCharacterEvent:FireServer("MainSpawn")
+end)
+
+Homebutton.Name = "Homebutton"
+Homebutton.Parent = ImageLabel_3
+Homebutton.BackgroundColor3 = Color3.fromRGB(86, 26, 139)
+Homebutton.Position = UDim2.new(0.417711556, 0, 0.909056485, 0)
+Homebutton.Size = UDim2.new(0, 107, 0, 30)
+Homebutton.Font = Enum.Font.SourceSans
+Homebutton.Text = "Home"
+Homebutton.TextColor3 = Color3.fromRGB(0, 0, 0)
+Homebutton.TextSize = 14.000
+Homebutton.MouseButton1Down:connect(function()
+	Page3.Visible = false Main.Visible = true
+end)
