@@ -12,7 +12,10 @@ local VipPackCloth = Instance.new("TextButton")
 local Respawn = Instance.new("TextButton")
 local Homebutton = Instance.new("TextButton")
 local Close = Instance.new("TextButton")
+local Shurikens = Instance.new("TextButton")
 local Open = Instance.new("TextButton")
+
+
 
 --Properties:
 
@@ -48,6 +51,64 @@ FastSword.MouseButton1Down:connect(function()
 
 		wait(0.1)end
 end)
+
+Shurikens.Name = "Shurikens"
+Shurikens.Parent = ImageLabel
+Shurikens.BackgroundColor3 = Color3.fromRGB(122, 6, 255)
+Shurikens.Position = UDim2.new(0.219712526, 0, 0.9308357, 0)
+Shurikens.Size = UDim2.new(0, 73, 0, 26)
+Shurikens.Font = Enum.Font.SourceSans
+Shurikens.Text = "spam shuriken"
+Shurikens.TextColor3 = Color3.fromRGB(0, 0, 0)
+Shurikens.TextSize = 14.000
+Shurikens.MouseButton1Down:connect(function()
+    while wait() do
+     wait(0)
+    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Shuriken", "Shuriken9Ying")
+    wait(0)
+    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Shuriken", "Shuriken9Yang")
+    wait(0)
+     wait(0)
+    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Shuriken", "Shuriken8Ying")
+    wait(0)
+    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Shuriken", "Shuriken8Yang")
+    wait(0)
+    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("FunnyThrowPass", "ThrowingDonuts")
+    wait(0)
+    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("FunnyThrowPass", "StarfishShuriken")
+    wait(0)
+    wait(0)
+    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("FunnyThrowPass", "WarRock")
+    wait(0)
+    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("FunnyThrowPass", "FlowerStar3")
+    wait(0)
+    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("FunnyThrowPass", "GrabBag")
+    wait(0)
+    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("FunnyThrowPass", "GhostDagger")
+    wait(0)
+    wait(0)
+    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("FunnyThrowPass", "DarkageKunai")
+    wait(0)
+    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("PizzaPass", "PizzaKunai")
+    wait(0)
+    wait(0)
+    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("RainbowPass", "MetallicThrowingKnives")
+    wait(0)
+    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("VipPass", "Chakra")
+    wait(0)
+    wait(0)
+    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Shuriken", "Shuriken2")
+    wait(0)
+    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Shuriken", "Shuriken2")
+    wait(0)
+    wait(0)
+    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Shuriken", "Shuriken1")
+    wait(0)
+    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Shuriken", "Shuriken1")
+    wait(0)
+    end
+end)
+
 
 NegativeNin.Name = "NegativeNin"
 NegativeNin.Parent = ImageLabel
