@@ -1,0 +1,158 @@
+
+local ScreenGui = Instance.new("ScreenGui")
+local Page3 = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local FastSword = Instance.new("TextButton")
+local NegativeNin = Instance.new("TextButton")
+local VipPackCloth = Instance.new("TextButton")
+local Respawn = Instance.new("TextButton")
+local Homebutton = Instance.new("TextButton")
+local Close = Instance.new("TextButton")
+local Shurikens = Instance.new("TextButton")
+local Open = Instance.new("TextButton")
+
+
+
+--Properties:
+
+ScreenGui.Parent = (game:GetService("CoreGui") or gethui())
+ScreenGui.Parent = game.CoreGui
+
+Page3.Name = "Page3"
+Page3.Parent = ScreenGui
+Page3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Page3.Position = UDim2.new(0.218627453, 0, 0.278532624, 0)
+Page3.Size = UDim2.new(0, 484, 0, 339)
+Page3.Visible = false
+
+ImageLabel.Parent = Page3
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.Position = UDim2.new(-0.00185409188, 0, -0.00259613991, 0)
+ImageLabel.Size = UDim2.new(0, 487, 0, 347)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=10065715293"
+
+FastSword.Name = "FastSword"
+FastSword.Parent = ImageLabel
+FastSword.BackgroundColor3 = Color3.fromRGB(86, 26, 139)
+FastSword.Position = UDim2.new(0.777054489, 0, 0.91193831, 0)
+FastSword.Size = UDim2.new(0, 107, 0, 30)
+FastSword.Font = Enum.Font.SourceSans
+FastSword.Text = "Fast Sword hit"
+FastSword.TextColor3 = Color3.fromRGB(0, 0, 0)
+FastSword.TextSize = 14.000
+FastSword.MouseButton1Down:connect(function()
+	while true do
+
+		game:GetService("Players").LocalPlayer.Character.Sword.HitEvent:FireServer()
+
+		wait(0.1)end
+end)
+
+Shurikens.Name = "Shurikens"
+Shurikens.Parent = ImageLabel
+Shurikens.BackgroundColor3 = Color3.fromRGB(122, 6, 255)
+Shurikens.Position = UDim2.new(0.219712526, 0, 0.9308357, 0)
+Shurikens.Size = UDim2.new(0, 73, 0, 26)
+Shurikens.Font = Enum.Font.SourceSans
+Shurikens.Text = "spam shuriken"
+Shurikens.TextColor3 = Color3.fromRGB(0, 0, 0)
+Shurikens.TextSize = 14.000
+Shurikens.MouseButton1Down:connect(function()
+    while wait() do
+     wait(0)
+    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Shuriken", "Shuriken9Ying")
+    wait(0)
+    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Shuriken", "Shuriken9Yang")
+    wait(0)
+     wait(0)
+    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Shuriken", "Shuriken8Ying")
+    wait(0)
+    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Shuriken", "Shuriken8Yang")
+    wait(0)
+    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("PizzaPass", "PizzaKunai")
+    wait(0)
+    wait(0)
+    wait(0)
+    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Shuriken", "Shuriken2")
+    wait(0)
+    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Shuriken", "Shuriken2")
+    wait(0)
+    wait(0)
+    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Shuriken", "Shuriken1")
+    wait(0)
+    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Shuriken", "Shuriken1")
+    wait(0)
+    end
+end)
+
+
+NegativeNin.Name = "NegativeNin"
+NegativeNin.Parent = ImageLabel
+NegativeNin.BackgroundColor3 = Color3.fromRGB(86, 26, 139)
+NegativeNin.Position = UDim2.new(0.000968323555, 0, 0.805654407, 0)
+NegativeNin.Size = UDim2.new(0, 107, 0, 36)
+NegativeNin.Font = Enum.Font.SourceSans
+NegativeNin.Text = "Negative Ninjutsu"
+NegativeNin.TextColor3 = Color3.fromRGB(0, 0, 0)
+NegativeNin.TextSize = 14.000
+NegativeNin.MouseButton1Down:connect(function()
+	local rs = game:GetService("ReplicatedStorage")
+	while wait(0.72) do
+		rs.RemoteEvent.AddPowerEvent:FireServer("FromTraining", -2000000000000000000000000000000000000000000000000)
+		wait(0.72)
+		rs.RemoteEvent.AddPowerEvent:FireServer("FromTraining", -19916241294912496129491248999999.99) 
+	end 
+end)
+
+VipPackCloth.Name = "VipPackCloth"
+VipPackCloth.Parent = ImageLabel
+VipPackCloth.BackgroundColor3 = Color3.fromRGB(86, 26, 139)
+VipPackCloth.Position = UDim2.new(0.777054429, 0, 0.805743575, 0)
+VipPackCloth.Size = UDim2.new(0, 107, 0, 36)
+VipPackCloth.Font = Enum.Font.SourceSans
+VipPackCloth.Text = "VipPackCloth"
+VipPackCloth.TextColor3 = Color3.fromRGB(0, 0, 0)
+VipPackCloth.TextSize = 14.000
+VipPackCloth.MouseButton1Down:connect(function()
+	game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("VipPass", "VipPackCloth")
+end)
+
+Respawn.Name = "Respawn"
+Respawn.Parent = ImageLabel
+Respawn.BackgroundColor3 = Color3.fromRGB(86, 26, 139)
+Respawn.Position = UDim2.new(-0.00117959525, 0, 0.91193831, 0)
+Respawn.Size = UDim2.new(0, 108, 0, 30)
+Respawn.Font = Enum.Font.SourceSans
+Respawn.Text = "Respawn"
+Respawn.TextColor3 = Color3.fromRGB(0, 0, 0)
+Respawn.TextSize = 14.000
+Respawn.MouseButton1Down:connect(function()
+	game:GetService("ReplicatedStorage").RemoteEvent.SpawnCharacterEvent:FireServer("MainSpawn")
+end)
+
+
+Close.Name = "Close"
+Close.Parent = ImageLabel
+Close.BackgroundColor3 = Color3.fromRGB(95, 0, 0)
+Close.Position = UDim2.new(0.954825461, 0, 0, 0)
+Close.Size = UDim2.new(0, 22, 0, 23)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "x"
+Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextSize = 14.000
+Close.MouseButton1Down:connect(function()
+	Page3.Visible = false Open.Visible = true
+end)
+
+Open.Name = "Open"
+Open.Parent = ScreenGui
+Open.BackgroundColor3 = Color3.fromRGB(153, 203, 78)
+Open.Position = UDim2.new(0.91568625, 0, 0.606317997, 0)
+Open.Size = UDim2.new(0, 86, 0, 18)
+Open.Font = Enum.Font.SourceSans
+Open.Text = "Open"
+Open.TextColor3 = Color3.fromRGB(0, 0, 0)
+Open.TextSize = 14.000
+Open.MouseButton1Down:connect(function()
+	Page3.Visible = true Open.Visible = false
+end)
