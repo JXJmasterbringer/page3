@@ -56,54 +56,37 @@ Shurikens.BackgroundColor3 = Color3.fromRGB(122, 6, 255)
 Shurikens.Position = UDim2.new(0.219712526, 0, 0.9308357, 0)
 Shurikens.Size = UDim2.new(0, 73, 0, 26)
 Shurikens.Font = Enum.Font.SourceSans
-Shurikens.Text = "spam shuriken"
+Shurikens.Text = "God Mode"
 Shurikens.TextColor3 = Color3.fromRGB(0, 0, 0)
 Shurikens.TextSize = 14.000
 Shurikens.MouseButton1Down:connect(function()
-    while wait() do
-     wait(0)
-    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Shuriken", "Shuriken9Ying")
-    wait(0)
-    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Shuriken", "Shuriken9Yang")
-    wait(0)
-     wait(0)
-    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Shuriken", "Shuriken8Ying")
-    wait(0)
-    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Shuriken", "Shuriken8Yang")
-    wait(0)
-    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("FunnyThrowPass", "ThrowingDonuts")
-    wait(0)
-    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("FunnyThrowPass", "StarfishShuriken")
-    wait(0)
-    wait(0)
-    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("FunnyThrowPass", "WarRock")
-    wait(0)
-    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("FunnyThrowPass", "FlowerStar3")
-    wait(0)
-    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("FunnyThrowPass", "GrabBag")
-    wait(0)
-    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("FunnyThrowPass", "GhostDagger")
-    wait(0)
-    wait(0)
-    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("FunnyThrowPass", "DarkageKunai")
-    wait(0)
-    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("PizzaPass", "PizzaKunai")
-    wait(0)
-    wait(0)
-    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("RainbowPass", "MetallicThrowingKnives")
-    wait(0)
-    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("VipPass", "Chakra")
-    wait(0)
-    wait(0)
-    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Shuriken", "Shuriken2")
-    wait(0)
-    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Shuriken", "Shuriken2")
-    wait(0)
-    wait(0)
-    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Shuriken", "Shuriken1")
-    wait(0)
-    game.ReplicatedStorage.RemoteEvent.GiveItemEvent:FireServer("Shuriken", "Shuriken1")
-    wait(0)
+   local player = game.Players.LocalPlayer
+
+if player.Character then
+
+if player.Character:FindFirstChild("Humanoid") then
+
+player.Character.Humanoid.Name = "1"
+
+end
+
+local l = player.Character["1"]:Clone()
+
+l.Parent = player.Character
+
+l.Name = "Humanoid"; wait(0.1)
+
+player.Character["1"]:Destroy()
+
+workspace.CurrentCamera.CameraSubject = player.Character.Humanoid
+
+player.Character.Animate.Disabled = true; wait(0.1)
+
+player.Character.Animate.Disabled = false
+
+end
+
+print("finished.")
     end
 end)
 
