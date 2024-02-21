@@ -31,7 +31,7 @@ ImageLabel.Parent = Page3
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel.Position = UDim2.new(-0.00185409188, 0, -0.00259613991, 0)
 ImageLabel.Size = UDim2.new(0, 487, 0, 347)
-ImageLabel.Image = "http://www.roblox.com/asset/?id=8895623115"
+ImageLabel.Image = "http://www.roblox.com/asset/?id=12615625756"
 
 FastSword.Name = "FastSword"
 FastSword.Parent = ImageLabel
